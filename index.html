@@ -3,39 +3,63 @@
     <head>
         <meta charset="utf-8">
         <title>Assignment</title>
-        <link rel="stylesheet" href="style.css">
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <!-- Bootstrap Framework-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <!-- Custom External CSS -->
+        <link rel="stylesheet" href="style.css">
+        <!-- Bootstrap Scripts-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous" defer></script>
+        <!-- Custom External Scripts-->
+        <script src="script.js" defer></script>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-dark navbar-expand-lg custom-navbar">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Hobbies</a>
+                <a class="navbar-brand" href="index.html"><b>DuoFolio</b></a>
 
                 <!-- Hamburger button for mobile -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <!-- Collapsible nav links -->
                 <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="journal.html">Journal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hobbies.html">Hobbies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">Contacts</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-        <script src="script.js"></script>
+        <div class="video-background-container">
+            <!-- The Video Element -->
+            <video autoplay muted loop playsinline class="background-video">
+                <source src="resources/307818_tiny.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <!-- The Foreground Content Layer -->
+            <div class="content-layer">
+                <h1 class="homepage-title">Welcome to <br><b>DuoFolio</b></h1>
+                <p class="homepage-description">DuoFolio was made for duos, with all the pros. A duo project initiated by two computer science students seeking to<br> make portfolio sharing simpler, and more enjoyable.</p>
+                <div style="display: flex; flex-direction: column;">
+                    <a class="portfolio-redirect" href="portfolio.html">Access Portfolios</a>
+                    <a class="github-redirect" href="https://github.com/Git-67/UXUI_Assignment" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
+
