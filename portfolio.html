@@ -43,21 +43,33 @@
                 </div>
             </div>
         </nav>
-        <div class="grid-portfolio">
-            <div class="portfolio">
-                <img src="resources/jingheng.png" alt="Jing Heng">
-                <div class="portfolio-text">
-                    <h1 class="title">Teh Jing Heng</h1>
-                    <p>"Vibe Vibe Coder"</p>
+        <div class="video-background-container">
+            <!-- The Video Element -->
+            <video autoplay muted loop playsinline class="background-video">
+                <source src="resources/307818_tiny.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <!-- The Foreground Content Layer -->
+            <div class="grid-portfolio">
+                <p class="portfolio-title">Here are your DuoFolios</p>
+                <div class="portfolio">
+                    <img src="resources/jingheng.png" alt="Jing Heng">
+                    <div class="portfolio-text">
+                        <h1 class="title">Teh Jing Heng</h1>
+                        <p>"Codes with a hint of Claude, a dash of ChatGPT & just a pinch of Gemini."</p>
+                    </div>
+                </div>
+                <div class="portfolio">
+                    <img src="resources/reuel.png" alt="Reuel">
+                    <div class="portfolio-text">
+                        <h1 class="title">Goh Yi Jie Reuel</h1>
+                        <p>"The Larp Coder"</p>
+                    </div>
                 </div>
             </div>
-            <div class="portfolio">
-                <img src="resources/reuel.png" alt="Reuel">
-                <div class="portfolio-text">
-                    <h1 class="title">Goh Yi Jie Reuel</h1>
-                    <p>"The Larp Coder"</p>
-                </div>
-            </div>
+            <p id="reminder" class="reminder">Friendly reminder to update your journal with more personal experiences, it has not been updated in quite some time... Won't hurt to share a bit more about yourselves, anything would help you both in the long run.</p>
+            <a class="journal-redirect" href="journal.html">Go to Journal</a>
         </div>
     </body>
 </html>
